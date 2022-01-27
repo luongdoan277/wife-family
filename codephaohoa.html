@@ -1,0 +1,32 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Chúc mừng năm mới 2022!!!</title>
+    <style>
+        .total{
+            background-image: url("backgroud.jpg");
+            background-size: cover;
+        }
+    </style>
+</head>
+<body style="margin: 0">
+    <div class="total">
+        <audio id="player" autoplay loop>
+            <source src="./HappyNewYear.mp3" type="audio/mp3">
+        </audio>
+        <div style="text-align: center; color: #d91c1c; z-index: 2">
+            <p style="font-size: 72px; margin: 0">Chúc mừng năm mới gia đình Ry</p>
+        </div>
+        <canvas id="canvas" style="width: 100%; height: 100%; z-index: 0"></canvas>
+
+    </div>
+    <script src="fireworks.js"></script>
+    <script>
+        document.addEventListener('click', play);
+        function play() {
+            document.getElementById('player').play();
+        }
+        play();
+    </script>
+</body>
+</html>
